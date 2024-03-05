@@ -11,8 +11,15 @@
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- Swiper CSS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Hero Section To Contact Animation Script -->
     <script>
@@ -60,7 +67,7 @@
     </div>
     <div class="w-1/2 ml-8">
       <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-gray-700">I'm a software engineer with a B.Sc in Computer Science and Engineering from <a href="https://rpsu.ac.bd">R. P. Saha University</a>.</p>
+      <p class="text-gray-700">I'm a software engineer with a B.Sc in Computer Science and Engineering from <a href="https://rpsu.ac.bd" target="_blank">R. P. Saha University</a>.</p>
     </div>
   </div>
 </section>
@@ -79,7 +86,7 @@
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">DocLinked</h3>
             <p class="text-gray-700 mb-4">It's a knowledge sharing Android app.</p>
-            <a href="https://github.com/Mehedi53423/DocLinked" class="text-blue-500 hover:underline">GitHub Repository</a>
+            <a href="https://github.com/Mehedi53423/DocLinked" target="_blank" class="text-blue-500 hover:underline">GitHub Repository</a>
           </div>
         </div>
       </div>
@@ -91,8 +98,8 @@
 " class="w-full h-42 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Tuition Fee Management System</h3>
-            <p class="text-gray-700 mb-4">Tuition-Fee-Management-System.</p>
-            <a href="https://github.com/Mehedi53423/Tuition-Fee-Management-System" class="text-blue-500 hover:underline">GitHub Repository</a>
+            <p class="text-gray-700 mb-4">Tuition Fee Management System.</p>
+            <a href="https://github.com/Mehedi53423/Tuition-Fee-Management-System" target="_blank" class="text-blue-500 hover:underline">GitHub Repository</a>
           </div>
         </div>
       </div>
@@ -104,7 +111,7 @@
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Pro Quizzer</h3>
             <p class="text-gray-700 mb-4">A Quiz Giving Edtech Website.</p>
-            <a href="https://github.com/Mehedi53423/Pro-Quizzer" class="text-blue-500 hover:underline">GitHub Repository</a>
+            <a href="https://github.com/Mehedi53423/Pro-Quizzer" target="_blank" class="text-blue-500 hover:underline">GitHub Repository</a>
           </div>
         </div>
       </div>
@@ -159,5 +166,23 @@
       <p>&copy; 2024 Md. Mehedi Hasan. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,  // Set the delay in milliseconds (e.g., 3000 for 3 seconds)
+      disableOnInteraction: false,
+    },
+  });
+</script>
 </body>
 </html>
