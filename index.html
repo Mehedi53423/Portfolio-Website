@@ -17,21 +17,9 @@
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/cf9cbf3728.js" crossorigin="anonymous"></script>
 
-    <!-- Hero Section To Contact Animation Script -->
-    <script>
-      function smoothScroll(targetId) {
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      }
-    </script>
-
     <title>Md. Mehedi Hasan</title>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="bg-blue-500 p-4">
@@ -160,8 +148,11 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center py-4">
     <div class="container mx-auto">
-      <p>&copy; 2024 Md. Mehedi Hasan. All rights reserved.</p>
+      <p>&copy; <span id="currentYear"></span> Md. Mehedi Hasan. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
