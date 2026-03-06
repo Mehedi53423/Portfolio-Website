@@ -1,158 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="মো. মেহেদী হাসান - সফটওয়্যার ইঞ্জিনিয়ার। ওয়েব ও অ্যান্ড্রয়েড অ্যাপ্লিকেশন ডেভেলপার।">
 
-    <!-- Animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Font Awesome Script -->
-    <script src="https://kit.fontawesome.com/cf9cbf3728.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts - Bengali -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Md. Mehedi Hasan</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cf9cbf3728.js" crossorigin="anonymous"></script>
+
+  <title>মো. মেহেদী হাসান | সফটওয়্যার ইঞ্জিনিয়ার</title>
 </head>
 
 <body>
+
+  <!-- Animated background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
   <!-- Navigation -->
-  <nav class="bg-blue-500 p-4">
-    <div class="container mx-auto">
-      <a href="https://মেহেদী-হাসান.বাংলা" class="text-white text-2xl font-bold">Md. Mehedi Hasan</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">মেহেদী হাসান</a>
+      <button class="nav-toggle" id="navToggle" aria-label="মেনু">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link">হোম</a></li>
+        <li><a href="#about"    class="nav-link">সম্পর্কে</a></li>
+        <li><a href="#projects" class="nav-link">প্রকল্প</a></li>
+        <li><a href="#contact"  class="nav-cta">যোগাযোগ করুন</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-<header class="bg-gray-800 text-white text-center py-20">
-  <div class="container mx-auto">
-    <!-- Animated Heading -->
-    <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">Hello, I'm Md. Mehedi Hasan</h1>
-
-    <!-- Subheading with Animation -->
-    <p class="text-lg animate__animated animate__fadeIn animate__delay-2s">A passionate software engineer with a love for creating web applications.</p>
-
-    <!-- Animated Button -->
-    <a href="#contact" class="bg-blue-500 text-white px-6 py-2 rounded-full mt-8 inline-block animate__animated animate__fadeIn animate__delay-3s" onclick="smoothScroll('contact')">Contact Me</a>
-  </div>
-</header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">হ্যালো, আমি</p>
+      <h1 class="hero-name">মো. মেহেদী হাসান</h1>
+      <p class="hero-title">সফটওয়্যার ইঞ্জিনিয়ার</p>
+      <p class="hero-desc">ওয়েব ও মোবাইল অ্যাপ্লিকেশন তৈরিতে আবেগী একজন ডেভেলপার, যিনি প্রযুক্তির মাধ্যমে সমস্যার সমাধান করতে ভালোবাসেন।</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">যোগাযোগ করুন</a>
+        <a href="#projects" class="btn btn-outline">আমার কাজ দেখুন</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-wrapper">
+        <img src="assets/images/avater-1.jpg" alt="মো. মেহেদী হাসান">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
 
   <!-- About Section -->
-<section class="py-16">
-  <div class="container mx-auto flex items-center">
-    <div class="w-1/2">
-      <!-- Add your photo or image here -->
-      <img src="assets/images/avater-1.jpg" alt="Md. Mehedi Hasan" class="rounded-full w-64 h-64 object-cover">
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">আমার <span class="highlight">সম্পর্কে</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>আমি একজন সফটওয়্যার ইঞ্জিনিয়ার। <a href="https://rpsu.ac.bd" target="_blank" class="text-link">রণদা প্রসাদ সাহা বিশ্ববিদ্যালয়</a> থেকে কম্পিউটার বিজ্ঞান ও প্রকৌশলে বি.এস.সি ডিগ্রি অর্জন করেছি।</p>
+          <p class="mt-4">আমি ওয়েব ও অ্যান্ড্রয়েড অ্যাপ্লিকেশন ডেভেলপমেন্টে দক্ষ এবং নতুন প্রযুক্তি শেখার প্রতি সর্বদা আগ্রহী। সমস্যা সমাধান করতে এবং ব্যবহারকারীর জন্য কার্যকর সমাধান তৈরি করতে আমি উৎসাহী।</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">৩+</span>
+              <span class="stat-label">প্রকল্প সম্পন্ন</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">২+</span>
+              <span class="stat-label">বছরের অভিজ্ঞতা</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">১০০%</span>
+              <span class="stat-label">নিষ্ঠা</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-side">
+          <h3 class="skills-title">প্রযুক্তিগত দক্ষতা</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Android</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="w-1/2 ml-8">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-gray-700">I'm a software engineer with a B.Sc in Computer Science and Engineering from <a href="https://rpsu.ac.bd" target="_blank">R. P. Saha University</a>.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Projects Section -->
-<section class="bg-gray-100 py-16">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">আমার <span class="highlight">প্রকল্পসমূহ</span></h2>
+      <div class="projects-grid">
 
-    <!-- Project Cards -->
-    <div class="flex flex-wrap -mx-4">
-      <!-- Project 1 -->
-      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-          <img src="/assets/images/dock-linked.jpg" alt="DocLinked" class="w-full h-42 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2">DocLinked</h3>
-            <p class="text-gray-700 mb-4">It's a knowledge sharing Android app.</p>
-            <a href="https://github.com/Mehedi53423/DocLinked" target="_blank" class="text-blue-500 hover:underline">GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- Project 1 -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-top project-card-top--blue">
+            <div class="project-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <span class="project-num">০১</span>
+          </div>
+          <div class="project-info">
+            <h3>ডকলিংকড</h3>
+            <p>জ্ঞান শেয়ারিং অ্যান্ড্রয়েড অ্যাপ্লিকেশন যেখানে ব্যবহারকারীরা ডকুমেন্ট আপলোড ও শেয়ার করতে পারেন।</p>
+            <div class="project-tags">
+              <span>Android</span>
+              <span>Java</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mehedi53423/DocLinked" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> গিটহাব
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-          <img src="/assets/images/tuition-fee-management-system.jpg" alt="Tuition Fee Management System
-" class="w-full h-42 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2">Tuition Fee Management System</h3>
-            <p class="text-gray-700 mb-4">Tuition Fee Management System.</p>
-            <a href="https://github.com/Mehedi53423/Tuition-Fee-Management-System" target="_blank" class="text-blue-500 hover:underline">GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- Project 2 -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-top project-card-top--purple">
+            <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="project-num">০২</span>
+          </div>
+          <div class="project-info">
+            <h3>টিউশন ফি ম্যানেজমেন্ট সিস্টেম</h3>
+            <p>শিক্ষার্থীদের টিউশন ফি রেকর্ড, পেমেন্ট ট্র্যাকিং ও প্রতিবেদন তৈরির সফটওয়্যার।</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mehedi53423/Tuition-Fee-Management-System" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> গিটহাব
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-          <img src="/assets/images/pro-quizer.jpg" alt="Pro Quizer " class="w-full h-42 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2">Pro Quizzer</h3>
-            <p class="text-gray-700 mb-4">A Quiz Giving Edtech Website.</p>
-            <div class="flex"><a href="https://github.com/Mehedi53423/Pro-Quizzer" target="_blank" class="text-blue-500 hover:underline text-left">GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="https://pro-quizzer.netlify.app/" target="_blank" class="text-green-600 hover:underline text-right">Website<i class="fa-solid fa-link"></i></a></div>
+        <!-- Project 3 -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-top project-card-top--teal">
+            <div class="project-icon"><i class="fa-solid fa-circle-question"></i></div>
+            <span class="project-num">০৩</span>
+          </div>
+          <div class="project-info">
+            <h3>প্রো কুইজার</h3>
+            <p>শিক্ষার্থীদের জন্য ইন্টারেক্টিভ কুইজ পরিচালনার এডটেক ওয়েবসাইট। বিভিন্ন বিষয়ে অনলাইনে কুইজ দেওয়া যায়।</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mehedi53423/Pro-Quizzer" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> গিটহাব
+              </a>
+              <a href="https://pro-quizzer.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link--live">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> লাইভ ডেমো
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contact Section -->
-<section id="contact" class="py-16">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">যোগাযোগ <span class="highlight">করুন</span></h2>
+      <div class="contact-grid">
 
-    <!-- Contact Form -->
-    <form action="#" method="POST" class="max-w-md mx-auto">
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+        <div class="contact-info">
+          <h3>আমার সাথে কথা বলুন</h3>
+          <p>যেকোনো প্রশ্ন, সহযোগিতা বা কাজের জন্য আমাকে বার্তা পাঠান। আমি সর্বদা সাড়া দিতে প্রস্তুত।</p>
+          <div class="contact-links">
+            <a href="mailto:mehedi53423@gmail.com" class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span>mehedi53423@gmail.com</span>
+            </a>
+            <a href="https://mehedi-hasan.com.bd" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-globe"></i></span>
+              <span>mehedi-hasan.com.bd</span>
+            </a>
+            <a href="https://github.com/Mehedi53423" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+              <span>Mehedi53423</span>
+            </a>
+            <a href="https://gitlab.com/Mehedi53423" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-gitlab"></i></span>
+              <span>Mehedi53423</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mehedi53423" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span>mehedi53423</span>
+            </a>
+            <a href="https://twitter.com/mehedi53423" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-icon"><i class="fa-brands fa-x-twitter"></i></span>
+              <span>@mehedi53423</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="আপনার নাম" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            বার্তা পাঠান <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="formSuccess">বার্তা পাঠানো হয়েছে! ধন্যবাদ।</p>
+        </form>
+
       </div>
-
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
-      </div>
-
-      <div class="mb-4">
-        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Message" required></textarea>
-      </div>
-
-      <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-700">Submit</button>
-    </form>
-
-    <!-- Contact Information -->
-    <div class="mt-8 text-center">
-      <p class="text-gray-700">Feel free to reach out to me via email or social media:</p>
-      <p class="mt-2">
-        Email: <a href="mailto:mehedi53423@gmail.com" class="text-blue-500 hover:underline">mehedi53423@gmail.com</a>
-      </p>
-      <p class="mt-2">
-        Twitter: <a href="https://twitter.com/mehedi53423" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">@mehedi53423</a>
-      </p>
-      <p class="mt-2">
-        LinkedIn: <a href="https://www.linkedin.com/in/mehedi53423" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">mehedi53423</a>
-      </p>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
-    <div class="container mx-auto">
-      <p>&copy; <span id="currentYear"></span> Md. Mehedi Hasan. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYear"></span> মো. মেহেদী হাসান। সর্বস্বত্ব সংরক্ষিত।</p>
+      <div class="footer-links">
+        <a href="https://mehedi-hasan.com.bd" target="_blank" rel="noopener noreferrer" aria-label="ইংরেজি পোর্টফোলিও"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://github.com/Mehedi53423"  target="_blank" rel="noopener noreferrer" aria-label="গিটহাব"><i class="fa-brands fa-github"></i></a>
+        <a href="https://gitlab.com/Mehedi53423"  target="_blank" rel="noopener noreferrer" aria-label="গিটল্যাব"><i class="fa-brands fa-gitlab"></i></a>
+        <a href="https://www.linkedin.com/in/mehedi53423" target="_blank" rel="noopener noreferrer" aria-label="লিংকডইন"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/mehedi53423" target="_blank" rel="noopener noreferrer" aria-label="এক্স (টুইটার)"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
     </div>
   </footer>
 
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
